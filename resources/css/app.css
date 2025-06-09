@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Sue+Ellen+Francisco&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&family=Sue+Ellen+Francisco&display=swap');
 @import 'tailwindcss';
+@import 'tw-animate-css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
@@ -10,14 +11,13 @@
     font-family: Foglihtenno04;
     font-style: normal;
     font-display: swap;
-    src: url("/assets/fonts/Foglihtenno04.otf") format("opentype");
+    src: url('/assets/fonts/Foglihtenno04.otf') format('opentype');
 }
 
 @theme {
-    --font-sans:
-        'DM Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    --font-serif: 'DM Serif Display', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
-    --font-display: Foglihtenno04, var(--font-serif);
+    --font-sans: 'Inclusive Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-handwriting: 'Sue Ellen Francisco', var(--font-serif);
+    --font-display: 'Foglihtenno04', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
 @layer base {
@@ -27,6 +27,16 @@
     h4,
     h5,
     h6 {
-        @apply font-serif;
+        @apply font-bold text-zinc-200;
+    }
+
+    p {
+        @apply leading-relaxed text-zinc-400;
+    }
+}
+
+@layer components {
+    .block {
+        @apply mx-auto w-9/10 max-w-272;
     }
 }

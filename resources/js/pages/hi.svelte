@@ -4,7 +4,9 @@
 </script>
 
 <div class="overflow-x-hidden bg-black">
-    <header class="fixed left-1/2 z-10 mt-4 flex h-12 max-w-max -translate-x-1/2 items-center gap-1 rounded-xl bg-zinc-800 pr-1 pl-4">
+    <header
+        class="fixed left-1/2 z-10 mt-4 flex h-12 max-w-max -translate-x-1/2 items-center gap-1 rounded-xl bg-zinc-800/80 pr-1 pl-4 backdrop-blur-sm"
+    >
         <a href="/" class="text-zinc-300">Pow</a>
         <div class="ml-5 h-3/5 border-r border-zinc-700"></div>
         <nav class="flex">
@@ -69,13 +71,16 @@
         </button>
     </header>
     <main class="relative flex min-h-screen items-center">
-        <div class="block">
-            <div class="grid grid-cols-2 gap-10">
-                <div class="flex flex-col items-start gap-4">
-                    <span class="font-handwriting text-xl text-zinc-400">/* Notes, projects, and other unfinished thoughts */</span>
-                    <h1 class="text-7xl">Hi, I'm Pow</h1>
+        <div class="inner">
+            <div class="mx-auto max-w-2xl">
+                <div class="flex flex-col items-center justify-center gap-6 text-center">
+                    <span class="font-handwriting text-2xl text-zinc-400">Hello, you found me.</span>
+                    <h1 class="text-7xl">
+                        I'm <span class="text-cyan-500">Pow</span>. Welcome to my <span class="text-cyan-500">digital home</span>.
+                    </h1>
                     <p class="text-xl">
-                        This is where I figure things out in public. It’s a mix of work, thoughts, and whatever I’m currently obsessed with.
+                        This isn’t a portfolio. It’s not a blog. It’s a quiet little corner where I collect thoughts, tinker with ideas, and keep
+                        pieces of who I am. There’s no grand theme — just life, as it unfolds.
                     </p>
                     <div class="flex items-center gap-8">
                         <button
@@ -110,4 +115,280 @@
             </div>
         </div>
     </main>
+    <div class="relative flex items-center">
+        <div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-black"></div>
+        <div class="w-full border-b border-cyan-500"></div>
+        <div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-black"></div>
+    </div>
+    <section class="py-28">
+        <div class="inner flex flex-col items-center gap-12">
+            <div class="w-full">
+                <span class="font-handwriting text-xl text-zinc-400">Little Brain Dumps</span>
+                <h2 class="mb-2 text-4xl">Things I’ve Written Down</h2>
+                <p class="max-w-2xl text-lg">
+                    Some of them started as questions. Others, just needed to be said out loud. I write when I can’t find the answer in silence — or
+                    when I want to remember how it felt to be here, in this moment.
+                </p>
+            </div>
+            <div class="grid gap-4">
+                <div class="flex items-center gap-12 rounded-lg bg-zinc-900/70 p-6">
+                    <div class="space-y-2">
+                        <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                        <h3 class="mt-2 text-2xl">How I Learned to Stop Worrying and Love React</h3>
+                        <p class="line-clamp-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum numquam cupiditate nostrum nesciunt fugiat consectetur ad
+                            et dignissimos modi dolorem officiis natus, deserunt animi optio dolor illo odit pariatur corrupti.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2 text-sm text-zinc-500">
+                                <span>1 min read</span>
+                                <span class="size-0.5 rounded-full bg-cyan-500"></span>
+                                <span>28 Sep 2023</span>
+                                <span class="size-0.5 rounded-full bg-cyan-500"></span>
+                                <span class="flex gap-2">
+                                    <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
+                                    <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                                </span>
+                            </div>
+                            <a
+                                href="/articles/this-is-a-title"
+                                class="flex items-center gap-1 text-cyan-500 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+                            >
+                                Read more <Icon icon="solar:arrow-right-linear" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="aspect-[4/3] max-w-70 overflow-hidden rounded-md">
+                        <img
+                            class="size-full"
+                            src="https://images.unsplash.com/photo-1531256379416-9f000e90aacc?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="flex items-center gap-12 rounded-lg bg-zinc-900/70 p-6">
+                    <div class="space-y-2">
+                        <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                        <h3 class="mt-2 text-2xl">How I Learned to Stop Worrying and Love React</h3>
+                        <p class="line-clamp-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum numquam cupiditate nostrum nesciunt fugiat consectetur ad
+                            et dignissimos modi dolorem officiis natus, deserunt animi optio dolor illo odit pariatur corrupti.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2 text-sm text-zinc-500">
+                                <span>1 min read</span>
+                                <span class="size-0.5 rounded-full bg-cyan-500"></span>
+                                <span>28 Sep 2023</span>
+                                <span class="size-0.5 rounded-full bg-cyan-500"></span>
+                                <span class="flex gap-2">
+                                    <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
+                                    <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                                </span>
+                            </div>
+                            <a
+                                href="/articles/this-is-a-title"
+                                class="flex items-center gap-1 text-cyan-500 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+                            >
+                                Read more <Icon icon="solar:arrow-right-linear" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="aspect-[4/3] max-w-70 overflow-hidden rounded-md">
+                        <img
+                            class="size-full"
+                            src="https://images.unsplash.com/photo-1531256379416-9f000e90aacc?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="flex items-center gap-12 rounded-lg bg-zinc-900/70 p-6">
+                    <div class="space-y-2">
+                        <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                        <h3 class="mt-2 text-2xl">How I Learned to Stop Worrying and Love React</h3>
+                        <p class="line-clamp-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum numquam cupiditate nostrum nesciunt fugiat consectetur ad
+                            et dignissimos modi dolorem officiis natus, deserunt animi optio dolor illo odit pariatur corrupti.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2 text-sm text-zinc-500">
+                                <span>1 min read</span>
+                                <span class="size-0.5 rounded-full bg-cyan-500"></span>
+                                <span>28 Sep 2023</span>
+                                <span class="size-0.5 rounded-full bg-cyan-500"></span>
+                                <span class="flex gap-2">
+                                    <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
+                                    <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                                </span>
+                            </div>
+                            <a
+                                href="/articles/this-is-a-title"
+                                class="flex items-center gap-1 text-cyan-500 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+                            >
+                                Read more <Icon icon="solar:arrow-right-linear" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="aspect-[4/3] max-w-70 overflow-hidden rounded-md">
+                        <img
+                            class="size-full"
+                            src="https://images.unsplash.com/photo-1531256379416-9f000e90aacc?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+            <a
+                href="/articles"
+                class="group/button inline-flex h-14 items-center gap-2 rounded-xl border border-zinc-700 px-4 text-white transition-all hover:bg-zinc-900 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+            >
+                See More Articles
+                <div
+                    class="grid size-8 place-items-center rounded-lg border border-zinc-700 group-hover/button:bg-white group-hover/button:text-zinc-800"
+                >
+                    <Icon icon="solar:arrow-right-outline" class="size-4" />
+                </div>
+            </a>
+        </div>
+    </section>
+    <div class="relative flex items-center">
+        <div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-black"></div>
+        <div class="w-full border-b border-cyan-500"></div>
+        <div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-black"></div>
+    </div>
+    <section class="py-28">
+        <div class="inner flex flex-col items-center gap-12">
+            <div class="w-full">
+                <span class="font-handwriting text-xl text-zinc-400">Things I've Made (and Broke)</span>
+                <h2 class="mb-2 text-4xl">Projects I’ve Been Building</h2>
+                <p class="max-w-2xl text-lg">
+                    This is where I get my hands dirty — building things, breaking stuff, learning as I go. Some are experiments, some are finished,
+                    none are perfect.
+                </p>
+            </div>
+            <div class="grid grid-cols-3 gap-8">
+                <div class="group overflow-hidden rounded-lg bg-zinc-900/70">
+                    <div class="aspect-video overflow-hidden">
+                        <img
+                            class="size-full transition-all group-hover:scale-110 group-hover:rotate-4"
+                            src="https://images.unsplash.com/photo-1531256379416-9f000e90aacc?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                    </div>
+                    <div class="space-y-2 p-6">
+                        <span class="font-handwriting text-xl text-zinc-400 italic">Web Project</span>
+                        <h3 class="mt-2 text-2xl">Palletepix</h3>
+                        <div class="flex items-center gap-2 text-sm text-zinc-500">
+                            <span class="flex gap-2">
+                                <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
+                                <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                            </span>
+                        </div>
+                        <p class="line-clamp-3">Palletepix is a color palette generator that lets you generate color palettes from an image.</p>
+                        <hr class="my-4 block border-zinc-700" />
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="/" target="_blank" class="text-zinc-400 hover:text-zinc-200" aria-label="GitHub">
+                                    <Icon icon="hugeicons:github" class="size-5" />
+                                </a>
+                                <a href="/" target="_blank" class="text-zinc-400 hover:text-zinc-200" aria-label="Website">
+                                    <Icon icon="solar:link-linear" class="size-5" />
+                                </a>
+                            </div>
+                            <a
+                                href="/articles/this-is-a-title"
+                                class="flex items-center gap-1 text-cyan-500 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+                            >
+                                Read Details <Icon icon="solar:arrow-right-linear" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg bg-zinc-900/70">
+                    <div class="aspect-video overflow-hidden">
+                        <img
+                            class="size-full transition-all group-hover:scale-110 group-hover:rotate-4"
+                            src="https://images.unsplash.com/photo-1531256379416-9f000e90aacc?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                    </div>
+                    <div class="space-y-2 p-6">
+                        <span class="font-handwriting text-xl text-zinc-400 italic">Web Project</span>
+                        <h3 class="mt-2 text-2xl">Palletepix</h3>
+                        <div class="flex items-center gap-2 text-sm text-zinc-500">
+                            <span class="flex gap-2">
+                                <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
+                                <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                            </span>
+                        </div>
+                        <p class="line-clamp-3">Palletepix is a color palette generator that lets you generate color palettes from an image.</p>
+                        <hr class="my-4 block border-zinc-700" />
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="/" target="_blank" class="text-zinc-400 hover:text-zinc-200" aria-label="GitHub">
+                                    <Icon icon="hugeicons:github" class="size-5" />
+                                </a>
+                                <a href="/" target="_blank" class="text-zinc-400 hover:text-zinc-200" aria-label="Website">
+                                    <Icon icon="solar:link-linear" class="size-5" />
+                                </a>
+                            </div>
+                            <a
+                                href="/articles/this-is-a-title"
+                                class="flex items-center gap-1 text-cyan-500 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+                            >
+                                Read Details <Icon icon="solar:arrow-right-linear" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group overflow-hidden rounded-lg bg-zinc-900/70">
+                    <div class="aspect-video overflow-hidden">
+                        <img
+                            class="size-full transition-all group-hover:scale-110 group-hover:rotate-4"
+                            src="https://images.unsplash.com/photo-1531256379416-9f000e90aacc?q=80&w=3348&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                        />
+                    </div>
+                    <div class="space-y-2 p-6">
+                        <span class="font-handwriting text-xl text-zinc-400 italic">Web Project</span>
+                        <h3 class="mt-2 text-2xl">Palletepix</h3>
+                        <div class="flex items-center gap-2 text-sm text-zinc-500">
+                            <span class="flex gap-2">
+                                <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
+                                <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                            </span>
+                        </div>
+                        <p class="line-clamp-3">Palletepix is a color palette generator that lets you generate color palettes from an image.</p>
+                        <hr class="my-4 block border-zinc-700" />
+                        <div class="flex items-center justify-between">
+                            <div class="flex gap-2">
+                                <a href="/" target="_blank" class="text-zinc-400 hover:text-zinc-200" aria-label="GitHub">
+                                    <Icon icon="hugeicons:github" class="size-5" />
+                                </a>
+                                <a href="/" target="_blank" class="text-zinc-400 hover:text-zinc-200" aria-label="Website">
+                                    <Icon icon="solar:link-linear" class="size-5" />
+                                </a>
+                            </div>
+                            <a
+                                href="/articles/this-is-a-title"
+                                class="flex items-center gap-1 text-cyan-500 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+                            >
+                                Read Details <Icon icon="solar:arrow-right-linear" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a
+                href="/projects"
+                class="group/button inline-flex h-14 items-center gap-2 rounded-xl border border-zinc-700 px-4 text-white transition-all hover:bg-zinc-900 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+            >
+                See More Projects
+                <div
+                    class="grid size-8 place-items-center rounded-lg border border-zinc-700 group-hover/button:bg-white group-hover/button:text-zinc-800"
+                >
+                    <Icon icon="solar:arrow-right-outline" class="size-4" />
+                </div>
+            </a>
+        </div>
+    </section>
 </div>

@@ -31,3 +31,13 @@ Route::get('/articles', function () {
         'filters' => fn() => $filters,
     ]);
 })->name('articles.index');
+
+Route::get('/snippets', function () {
+    $filters = [
+        'search' => request('search', ''),
+    ];
+
+    return Inertia::render('snippets/index', [
+        'filters' => fn() => $filters,
+    ]);
+})->name('snippets.index');

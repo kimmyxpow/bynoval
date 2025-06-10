@@ -45,3 +45,7 @@ Route::get('/snippets', function () {
 Route::get('/guest-book', function () {
     return Inertia::render('guest-book/index');
 })->name('guest-book.index');
+
+Route::get('/about', function () {
+    return Inertia::render('about/index');
+})->name('about.index');

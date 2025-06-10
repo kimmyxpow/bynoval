@@ -77,22 +77,23 @@
         <div class="grid gap-4">
             <div class="flex items-center gap-12 rounded-lg bg-zinc-900/70 p-6">
                 <div class="space-y-2">
-                    <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                    <div class="flex items-center justify-between">
+                        <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                        <span class="flex gap-2">
+                            <a href="/" class="text-sm text-zinc-500 transition-all hover:text-zinc-200">#React.js</a>
+                            <a href="/" class="text-sm text-zinc-500 transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                        </span>
+                    </div>
                     <h3 class="mt-2 text-2xl">How I Learned to Stop Worrying and Love React</h3>
-                    <p class="line-clamp-3">
+                    <p class="line-clamp-2">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum numquam cupiditate nostrum nesciunt fugiat consectetur ad et
                         dignissimos modi dolorem officiis natus, deserunt animi optio dolor illo odit pariatur corrupti.
                     </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-2 text-sm text-zinc-500">
-                            <span>1 min read</span>
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-zinc-500">1 min read</span>
                             <span class="size-0.5 rounded-full bg-cyan-500"></span>
-                            <span>28 Sep 2023</span>
-                            <span class="size-0.5 rounded-full bg-cyan-500"></span>
-                            <span class="flex gap-2">
-                                <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
-                                <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
-                            </span>
+                            <span class="text-sm text-zinc-500">28 Sep 2023</span>
                         </div>
                         <a
                             href="/articles/this-is-a-title"
@@ -112,22 +113,23 @@
             </div>
             <div class="flex items-center gap-12 rounded-lg bg-zinc-900/70 p-6">
                 <div class="space-y-2">
-                    <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                    <div class="flex items-center justify-between">
+                        <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                        <span class="flex gap-2">
+                            <a href="/" class="text-sm text-zinc-500 transition-all hover:text-zinc-200">#React.js</a>
+                            <a href="/" class="text-sm text-zinc-500 transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                        </span>
+                    </div>
                     <h3 class="mt-2 text-2xl">How I Learned to Stop Worrying and Love React</h3>
-                    <p class="line-clamp-3">
+                    <p class="line-clamp-2">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum numquam cupiditate nostrum nesciunt fugiat consectetur ad et
                         dignissimos modi dolorem officiis natus, deserunt animi optio dolor illo odit pariatur corrupti.
                     </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-2 text-sm text-zinc-500">
-                            <span>1 min read</span>
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-zinc-500">1 min read</span>
                             <span class="size-0.5 rounded-full bg-cyan-500"></span>
-                            <span>28 Sep 2023</span>
-                            <span class="size-0.5 rounded-full bg-cyan-500"></span>
-                            <span class="flex gap-2">
-                                <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
-                                <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
-                            </span>
+                            <span class="text-sm text-zinc-500">28 Sep 2023</span>
                         </div>
                         <a
                             href="/articles/this-is-a-title"
@@ -147,22 +149,23 @@
             </div>
             <div class="flex items-center gap-12 rounded-lg bg-zinc-900/70 p-6">
                 <div class="space-y-2">
-                    <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                    <div class="flex items-center justify-between">
+                        <span class="font-handwriting text-2xl text-zinc-400 italic">Personal</span>
+                        <span class="flex gap-2">
+                            <a href="/" class="text-sm text-zinc-500 transition-all hover:text-zinc-200">#React.js</a>
+                            <a href="/" class="text-sm text-zinc-500 transition-all hover:text-zinc-200">#Tailwind CSS</a>
+                        </span>
+                    </div>
                     <h3 class="mt-2 text-2xl">How I Learned to Stop Worrying and Love React</h3>
-                    <p class="line-clamp-3">
+                    <p class="line-clamp-2">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum numquam cupiditate nostrum nesciunt fugiat consectetur ad et
                         dignissimos modi dolorem officiis natus, deserunt animi optio dolor illo odit pariatur corrupti.
                     </p>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center gap-2 text-sm text-zinc-500">
-                            <span>1 min read</span>
+                    <div class="flex items-start justify-between">
+                        <div class="flex items-center gap-2">
+                            <span class="text-sm text-zinc-500">1 min read</span>
                             <span class="size-0.5 rounded-full bg-cyan-500"></span>
-                            <span>28 Sep 2023</span>
-                            <span class="size-0.5 rounded-full bg-cyan-500"></span>
-                            <span class="flex gap-2">
-                                <a href="/" class="transition-all hover:text-zinc-200">#React.js</a>
-                                <a href="/" class="transition-all hover:text-zinc-200">#Tailwind CSS</a>
-                            </span>
+                            <span class="text-sm text-zinc-500">28 Sep 2023</span>
                         </div>
                         <a
                             href="/articles/this-is-a-title"

@@ -41,7 +41,7 @@
     ];
 </script>
 
-<header class="fixed left-1/2 z-10 mt-4 max-w-max -translate-x-1/2 rounded-2xl bg-gradient-to-r from-black via-cyan-500 to-black p-[0.5px]">
+<header class="fixed left-1/2 z-50 mt-4 max-w-max -translate-x-1/2 rounded-2xl bg-gradient-to-r from-black via-cyan-500 to-black p-[0.5px]">
     <nav class="flex h-12 items-center rounded-xl border-cyan-500 bg-zinc-800 px-1">
         <Link class="grid size-10 place-items-center rounded-lg text-zinc-200 hover:bg-zinc-900" href="/">
             <Icon icon="solar:home-2-linear" />

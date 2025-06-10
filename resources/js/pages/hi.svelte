@@ -1,7 +1,16 @@
 <script lang="ts">
+    import PaperTorn from '@/components/svg/paper-torn.svelte';
     import Icon from '@iconify/svelte';
     import { Popover } from 'bits-ui';
+    import { HighlightAuto } from 'svelte-highlight';
+    import githubDark from 'svelte-highlight/styles/github-dark';
+
+    const code = 'const add = (a: number, b: number) => a + b;';
 </script>
+
+<svelte:head>
+    {@html githubDark}
+</svelte:head>
 
 <div class="overflow-x-hidden bg-black">
     <header
@@ -124,7 +133,7 @@
         <div class="inner flex flex-col items-center gap-12">
             <div class="w-full">
                 <span class="font-handwriting text-xl text-zinc-400">Little Brain Dumps</span>
-                <h2 class="mb-2 text-4xl">Things I’ve Written Down</h2>
+                <h2 class="mb-4 text-4xl">Things I’ve Written Down</h2>
                 <p class="max-w-2xl text-lg">
                     Some of them started as questions. Others, just needed to be said out loud. I write when I can’t find the answer in silence — or
                     when I want to remember how it felt to be here, in this moment.
@@ -259,7 +268,7 @@
         <div class="inner flex flex-col items-center gap-12">
             <div class="w-full">
                 <span class="font-handwriting text-xl text-zinc-400">Things I've Made (and Broke)</span>
-                <h2 class="mb-2 text-4xl">Projects I’ve Been Building</h2>
+                <h2 class="mb-4 text-4xl">Projects I’ve Been Building</h2>
                 <p class="max-w-2xl text-lg">
                     This is where I get my hands dirty — building things, breaking stuff, learning as I go. Some are experiments, some are finished,
                     none are perfect.
@@ -383,6 +392,62 @@
                 class="group/button inline-flex h-14 items-center gap-2 rounded-xl border border-zinc-700 px-4 text-white transition-all hover:bg-zinc-900 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
             >
                 See More Projects
+                <div
+                    class="grid size-8 place-items-center rounded-lg border border-zinc-700 group-hover/button:bg-white group-hover/button:text-zinc-800"
+                >
+                    <Icon icon="solar:arrow-right-outline" class="size-4" />
+                </div>
+            </a>
+        </div>
+    </section>
+    <div class="relative flex items-center">
+        <div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-black"></div>
+        <div class="w-full border-b border-cyan-500"></div>
+        <div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-black"></div>
+    </div>
+    <section class="py-28">
+        <div class="inner flex flex-col items-center gap-20">
+            <div class="w-full">
+                <span class="font-handwriting text-xl text-zinc-400">Memory Hacks</span>
+                <h2 class="mb-4 text-4xl">Tiny Code Things</h2>
+                <p class="max-w-2xl text-lg">
+                    I forget stuff. These snippets are like sticky notes for my future self — little reminders that saved me hours. You’re welcome to
+                    borrow them, or improve them.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 gap-8">
+                <div class="group relative rounded-lg bg-zinc-900 transition-all hover:-rotate-2">
+                    <PaperTorn class="absolute top-0 left-0 w-full -translate-y-1/2 fill-zinc-400" />
+                    <PaperTorn class="absolute top-2 left-0 w-full -translate-y-1/2 fill-zinc-900" />
+                    <PaperTorn class="absolute bottom-0 left-0 w-full translate-y-1/2 fill-zinc-400" />
+                    <PaperTorn class="absolute bottom-2 left-0 w-full translate-y-1/2 fill-zinc-900" />
+                    <div class="relative z-10 bg-zinc-900">
+                        <div class="flex flex-col space-y-4 p-6">
+                            <span class="font-handwriting text-4xl text-zinc-400">Web Project</span>
+                            <p class="">Palletepix is a color palette generator that lets you generate color palettes from an image.</p>
+                            <HighlightAuto class="text-sm" {code} />
+                        </div>
+                    </div>
+                </div>
+                <div class="group relative rounded-lg bg-zinc-900 transition-all hover:-rotate-2">
+                    <PaperTorn class="absolute top-0 left-0 w-full -translate-y-1/2 fill-zinc-400" />
+                    <PaperTorn class="absolute top-2 left-0 w-full -translate-y-1/2 fill-zinc-900" />
+                    <PaperTorn class="absolute bottom-0 left-0 w-full translate-y-1/2 fill-zinc-400" />
+                    <PaperTorn class="absolute bottom-2 left-0 w-full translate-y-1/2 fill-zinc-900" />
+                    <div class="relative z-10 bg-zinc-900">
+                        <div class="flex flex-col space-y-4 p-6">
+                            <span class="font-handwriting text-4xl text-zinc-400">Web Project</span>
+                            <p class="">Palletepix is a color palette generator that lets you generate color palettes from an image.</p>
+                            <HighlightAuto class="text-sm" {code} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a
+                href="/projects"
+                class="group/button inline-flex h-14 items-center gap-2 rounded-xl border border-zinc-700 px-4 text-white transition-all hover:bg-zinc-900 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+            >
+                See More Snippets
                 <div
                     class="grid size-8 place-items-center rounded-lg border border-zinc-700 group-hover/button:bg-white group-hover/button:text-zinc-800"
                 >

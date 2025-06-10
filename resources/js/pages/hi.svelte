@@ -412,7 +412,7 @@
                 <h2 class="mb-4 text-4xl">Tiny Code Things</h2>
                 <p class="max-w-2xl text-lg">
                     I forget stuff. These snippets are like sticky notes for my future self — little reminders that saved me hours. You’re welcome to
-                    borrow them, or improve them.
+                    borrow them, or improve them (or laugh at them).
                 </p>
             </div>
             <div class="grid grid-cols-2 gap-8">

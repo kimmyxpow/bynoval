@@ -41,3 +41,7 @@ Route::get('/snippets', function () {
         'filters' => fn() => $filters,
     ]);
 })->name('snippets.index');
+
+Route::get('/guest-book', function () {
+    return Inertia::render('guest-book/index');
+})->name('guest-book.index');

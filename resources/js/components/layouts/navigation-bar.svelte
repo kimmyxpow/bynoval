@@ -5,7 +5,7 @@
 
     const notebookLinks = [
         {
-            href: '/article',
+            href: '/articles',
             icon: 'solar:notes-linear',
             bg: 'bg-amber-600',
             title: 'Article',
@@ -70,20 +70,25 @@
                 >
                     <div class="grid gap-2">
                         {#each notebookLinks as link}
-                            <Link
-                                href={link.href}
-                                class="flex items-start gap-4 rounded-lg border border-zinc-700 p-4 font-medium transition-all select-none hover:bg-zinc-800 focus-visible:outline-none"
-                            >
-                                <div class={`mt-1 grid size-10 shrink-0 place-items-center rounded-lg text-zinc-200 ${link.bg}`}>
-                                    <Icon class="size-6" icon="solar:notes-linear" />
-                                </div>
-                                <div>
-                                    <span class="text-zinc-200">{link.title}</span>
-                                    <p class="text-sm text-zinc-400">
-                                        {link.desc}
-                                    </p>
-                                </div>
-                            </Link>
+                            <Popover.Close>
+                                {#snippet child({ props })}
+                                    <Link
+                                        {...props}
+                                        href={link.href}
+                                        class="flex items-start gap-4 rounded-lg border border-zinc-700 p-4 font-medium transition-all select-none hover:bg-zinc-800 focus-visible:outline-none"
+                                    >
+                                        <div class={`mt-1 grid size-10 shrink-0 place-items-center rounded-lg text-zinc-200 ${link.bg}`}>
+                                            <Icon class="size-6" icon="solar:notes-linear" />
+                                        </div>
+                                        <div>
+                                            <span class="text-zinc-200">{link.title}</span>
+                                            <p class="text-sm text-zinc-400">
+                                                {link.desc}
+                                            </p>
+                                        </div>
+                                    </Link>
+                                {/snippet}
+                            </Popover.Close>
                         {/each}
                     </div>
                 </Popover.Content>

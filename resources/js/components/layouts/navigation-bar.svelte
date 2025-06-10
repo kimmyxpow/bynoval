@@ -113,13 +113,18 @@
                 >
                     <div class="grid grid-cols-2 gap-2">
                         {#each personalLinks as link}
-                            <Link
-                                href={link.href}
-                                class="flex h-12 items-center gap-2 rounded-lg border border-zinc-700 px-3 font-medium text-zinc-400 transition-all select-none hover:text-zinc-200 focus-visible:outline-none"
-                            >
-                                <img class="size-6" src="/assets/animated-icons/{link.img}" alt="{link.label} Icon" />
-                                {link.label}
-                            </Link>
+                            <Popover.Close>
+                                {#snippet child({ props })}
+                                    <Link
+                                        {...props}
+                                        href={link.href}
+                                        class="flex h-12 items-center gap-2 rounded-lg border border-zinc-700 px-3 font-medium text-zinc-400 transition-all select-none hover:text-zinc-200 focus-visible:outline-none"
+                                    >
+                                        <img class="size-6" src="/assets/animated-icons/{link.img}" alt="{link.label} Icon" />
+                                        {link.label}
+                                    </Link>
+                                {/snippet}
+                            </Popover.Close>
                         {/each}
                     </div>
                 </Popover.Content>

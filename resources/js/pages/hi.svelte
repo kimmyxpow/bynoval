@@ -13,20 +13,23 @@
 </svelte:head>
 
 <div class="overflow-x-hidden bg-black">
-    <header class="fixed left-1/2 z-10 mt-4 max-w-max -translate-x-1/2 bg-gradient-to-r from-black via-cyan-500 to-black p-[0.5px]">
+    <header class="fixed left-1/2 z-10 mt-4 max-w-max -translate-x-1/2 rounded-2xl bg-gradient-to-r from-black via-cyan-500 to-black p-[0.5px]">
         <nav class="flex h-12 items-center rounded-xl border-cyan-500 bg-zinc-800 px-1">
             <a class="grid size-10 place-items-center rounded-lg text-zinc-200 hover:bg-zinc-900" href="/home">
                 <Icon icon="solar:home-2-linear" />
             </a>
             <div class="h-3/5 border-r border-zinc-700"></div>
-            <a class="flex h-10 items-center rounded-lg px-4 text-zinc-300 transition-all hover:bg-zinc-900" href="/home">Projects</a>
+            <a class="flex h-10 items-center gap-1 rounded-lg pr-4 pl-2 text-zinc-300 transition-all hover:bg-zinc-900" href="/home">
+                <span class="mb-0.5 text-xs text-zinc-600">01</span>Projects
+            </a>
             <Popover.Root>
                 <Popover.Trigger>
                     {#snippet child({ props })}
                         <button
                             {...props}
-                            class="flex h-10 items-center gap-2 rounded-lg px-4 text-zinc-300 transition-all hover:bg-zinc-900 [&>svg]:transition-all data-[state='open']:[&>svg]:-scale-y-100"
+                            class="flex h-10 items-center gap-1 rounded-lg px-2 text-zinc-300 transition-all hover:bg-zinc-900 [&>svg]:transition-all data-[state='open']:[&>svg]:-scale-y-100"
                         >
+                            <span class="mb-0.5 text-xs text-zinc-600">02</span>
                             Notebook
                             <Icon icon="solar:alt-arrow-down-linear" class="text-xl" />
                         </button>
@@ -89,9 +92,9 @@
                     {#snippet child({ props })}
                         <button
                             {...props}
-                            class="flex h-10 items-center gap-2 rounded-lg px-4 text-zinc-300 transition-all hover:bg-zinc-900 [&>svg]:transition-all data-[state='open']:[&>svg]:-scale-y-100"
+                            class="flex h-10 items-center gap-1 rounded-lg px-2 text-zinc-300 transition-all hover:bg-zinc-900 [&>svg]:transition-all data-[state='open']:[&>svg]:-scale-y-100"
                         >
-                            Personal
+                            <span class="mb-0.5 text-xs text-zinc-600">03</span>Personal
                             <Icon icon="solar:alt-arrow-down-linear" class="text-xl" />
                         </button>
                     {/snippet}
@@ -139,8 +142,9 @@
                     {#snippet child({ props })}
                         <button
                             {...props}
-                            class="flex h-10 items-center gap-2 rounded-lg px-4 text-zinc-300 transition-all hover:bg-zinc-900 [&>svg]:transition-all data-[state='open']:[&>svg]:-scale-y-100"
+                            class="flex h-10 items-center gap-1 rounded-lg px-2 text-zinc-300 transition-all hover:bg-zinc-900 [&>svg]:transition-all data-[state='open']:[&>svg]:-scale-y-100"
                         >
+                            <span class="mb-0.5 text-xs text-zinc-600">04</span>
                             Extras
                             <Icon icon="solar:alt-arrow-down-linear" class="text-xl" />
                         </button>
@@ -177,7 +181,9 @@
                     </Popover.Content>
                 </Popover.Portal>
             </Popover.Root>
-            <a class="flex h-10 items-center rounded-lg px-4 text-zinc-300 transition-all hover:bg-zinc-900" href="/home">Contact Me</a>
+            <a class="flex h-10 items-center gap-1 rounded-lg pr-4 pl-2 text-zinc-300 transition-all hover:bg-zinc-900" href="/home">
+                <span class="mb-0.5 text-xs text-zinc-600">05</span>Contact Me
+            </a>
             <div class="h-3/5 border-r border-zinc-700"></div>
             <button
                 class="grid size-10 place-items-center rounded-lg text-zinc-200 hover:bg-zinc-900"

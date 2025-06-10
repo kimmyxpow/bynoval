@@ -7,20 +7,16 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
-@font-face {
-    font-family: Foglihtenno04;
-    font-style: normal;
-    font-display: swap;
-    src: url('/assets/fonts/Foglihtenno04.otf') format('opentype');
-}
-
 @theme {
     --font-sans: 'Inclusive Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     --font-handwriting: 'Sue Ellen Francisco', var(--font-serif);
-    --font-display: 'Foglihtenno04', ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
 }
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
     h1,
     h2,
     h3,
@@ -30,8 +26,15 @@
         @apply font-bold -tracking-wide text-zinc-200;
     }
 
-    p {
+    p,
+    input,
+    select,
+    textarea {
         @apply leading-relaxed text-zinc-400;
+    }
+
+    input::placeholder {
+        @apply text-zinc-600;
     }
 }
 

@@ -19,3 +19,15 @@ Route::get('/projects', function () {
         'filters' => fn() => $filters,
     ]);
 })->name('projects.index');
+
+Route::get('/articles', function () {
+    $filters = [
+        'categories' => request('categories', []),
+        'tags' => request('tags', []),
+        'search' => request('search', ''),
+    ];
+
+    return Inertia::render('articles/index', [
+        'filters' => fn() => $filters,
+    ]);
+})->name('articles.index');

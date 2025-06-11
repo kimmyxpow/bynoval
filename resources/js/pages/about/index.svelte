@@ -44,22 +44,24 @@
     </div>
 </section>
 
-<section class="py-26">
+<section>
     <div class="inner">
         <div class="space-y-16">
-            <h2 class="text-3xl">This Site / Philosophy</h2>
+            <h2 class="font-handwriting text-center text-3xl">This Site / Philosophy</h2>
             <div class="grid grid-cols-4 gap-6">
                 <div class="relative flex rotate-6 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />
-                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">Just a place to keep unfinished thoughts.</p>
+                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">
+                        not everything here is finished. not everything needs to be.
+                    </p>
                 </div>
                 <div class="relative flex -rotate-6 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />
-                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">Just a place to keep unfinished thoughts.</p>
+                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">It’s not a portfolio. It’s a playground.</p>
                 </div>
                 <div class="relative flex rotate-8 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />
-                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">Just a place to keep unfinished thoughts.</p>
+                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">Digital brain dump > polished case studies.</p>
                 </div>
                 <div class="relative flex -rotate-10 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />

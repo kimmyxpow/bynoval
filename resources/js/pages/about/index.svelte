@@ -4,6 +4,8 @@
 
 <script lang="ts">
     import Icon from '@iconify/svelte';
+
+    let { commits } = $props();
 </script>
 
 <main class="pt-26">
@@ -51,23 +53,69 @@
             <div class="grid grid-cols-4 gap-6">
                 <div class="relative flex rotate-6 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />
-                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">
-                        not everything here is finished. not everything needs to be.
-                    </p>
+                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">i forget things, so i write them down here</p>
                 </div>
                 <div class="relative flex -rotate-6 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />
-                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">It’s not a portfolio. It’s a playground.</p>
+                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">not everything needs to be finished to be shared</p>
                 </div>
                 <div class="relative flex rotate-8 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />
-                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">Digital brain dump > polished case studies.</p>
+                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">
+                        don’t trust the timestamps — i write and forget to hit publish
+                    </p>
                 </div>
                 <div class="relative flex -rotate-10 items-center justify-center px-4 pt-10">
                     <img class="absolute inset-0" src="/assets/img/notes.png" alt="" />
-                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">Just a place to keep unfinished thoughts.</p>
+                    <p class="font-handwriting relative -rotate-1 text-3xl text-zinc-800">if you're reading this, you're already part of the story</p>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-48">
+    <div class="inner">
+        <div class="flex flex-col gap-12">
+            <h2 class="text-3xl">Recently Touched</h2>
+            <div class="relative grid">
+                {#each commits as commit}
+                    <div class="relative pl-10 not-last:pb-4">
+                        <div class="absolute top-6 -bottom-2 left-2.5 w-1 bg-gradient-to-b from-zinc-800 to-cyan-500"></div>
+                        <div class="absolute top-1 left-0 size-6 rounded-full bg-gradient-to-b from-cyan-500 to-zinc-800"></div>
+                        <div class="mb-1 flex items-center justify-between">
+                            <span class="text-sm font-bold text-zinc-400">sha: {commit.sha}</span>
+                            <span class="text-sm text-zinc-200">Changed by: <span class="font-bold">{commit.commit.committer.name}</span></span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="bg-gradient-to-tr from-cyan-500 to-zinc-200 bg-clip-text text-xl text-transparent">
+                                {commit.commit.message}
+                            </span>
+                            <a
+                                href={commit.html_url}
+                                target="_blank"
+                                class="flex items-center gap-2 text-zinc-400 transition-all hover:text-zinc-200 hover:underline"
+                            >
+                                See Changes
+                                <Icon icon="solar:arrow-right-up-linear" class="size-4" />
+                            </a>
+                        </div>
+                    </div>
+                {/each}
+                <div class="pointer-events-none absolute -bottom-2 h-[80%] w-full bg-gradient-to-b from-transparent to-zinc-950"></div>
+            </div>
+            <a
+                href="https://github.com/kimmyxpow/bynoval/commits/main"
+                target="_blank"
+                class="group/button inline-flex h-14 items-center justify-center gap-2 self-center rounded-xl border border-zinc-700 px-4 text-white transition-all hover:bg-zinc-900 [&_svg]:transition-all hover:[&_svg]:-rotate-35"
+            >
+                See All
+                <div
+                    class="grid size-8 place-items-center rounded-lg border border-zinc-700 group-hover/button:bg-white group-hover/button:text-zinc-800"
+                >
+                    <Icon icon="solar:arrow-right-up-linear" class="size-4" />
+                </div>
+            </a>
         </div>
     </div>
 </section>

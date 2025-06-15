@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
@@ -47,5 +48,12 @@ Route::get('/guest-book', function () {
 })->name('guest-book.index');
 
 Route::get('/about', function () {
-    return Inertia::render('about/index');
+    $commitResponse = Http::get('https://api.github.com/repos/kimmyxpow/bynoval/commits', [
+        'per_page' => 10
+    ]);
+    $commits = $commitResponse->json();
+
+    return Inertia::render('about/index', [
+        'commits' => $commits
+    ]);
 })->name('about.index');

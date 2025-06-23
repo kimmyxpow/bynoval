@@ -57,3 +57,7 @@ Route::get('/about', function () {
         'commits' => $commits
     ]);
 })->name('about.index');
+
+Route::get('/goals', function () {
+    return Inertia::render('goals/index');
+})->name('about.index');

@@ -39,5 +39,8 @@
         "lint": "eslint . --fix",
         "types": "tsc --noEmit"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "date-fns": "^4.1.0"
+    }
 }

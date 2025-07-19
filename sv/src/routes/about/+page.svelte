@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
-	import { formatDistance, subDays } from 'date-fns';
+	import { formatDistance } from 'date-fns';
 
 	let { data } = $props();
 </script>
@@ -174,7 +174,7 @@
 							</a>
 						</div>
 						<span class="text-sm text-zinc-500">
-							{formatDistance(subDays(commit.commit.committer.date, 3), new Date(), {
+							{formatDistance(commit.commit.author.date, new Date(), {
 								addSuffix: true
 							})}
 						</span>

@@ -155,10 +155,13 @@
 							>
 						</div>
 						<div class="flex items-center justify-between">
-							<span
-								class="bg-gradient-to-tr from-cyan-500 to-zinc-200 bg-clip-text text-xl text-transparent"
-							>
-								{commit.commit.message}
+							<span class="text-xl">
+								<span class="mr-1">{commit.commit.message.slice(0, 2)}</span>
+								<span
+									class="bg-gradient-to-tr from-cyan-500 to-zinc-200 bg-clip-text text-transparent"
+								>
+									{commit.commit.message.slice(2)}
+								</span>
 							</span>
 							<a
 								href={commit.html_url}

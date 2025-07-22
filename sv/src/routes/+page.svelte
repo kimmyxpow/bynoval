@@ -60,9 +60,9 @@
 	</div>
 </main>
 <div class="relative flex items-center">
-	<div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-black"></div>
+	<div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-zinc-950"></div>
 	<div class="w-full border-b border-cyan-500"></div>
-	<div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-black"></div>
+	<div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-zinc-950"></div>
 </div>
 <section class="py-28">
 	<div class="inner flex flex-col items-center gap-12">
@@ -214,9 +214,9 @@
 	</div>
 </section>
 <div class="relative flex items-center">
-	<div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-black"></div>
+	<div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-zinc-950"></div>
 	<div class="w-full border-b border-cyan-500"></div>
-	<div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-black"></div>
+	<div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-zinc-950"></div>
 </div>
 <section class="py-28">
 	<div class="inner flex flex-col items-center gap-12">
@@ -394,9 +394,9 @@
 	</div>
 </section>
 <div class="relative flex items-center">
-	<div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-black"></div>
+	<div class="absolute left-0 h-1 w-1/2 bg-gradient-to-l from-transparent to-zinc-950"></div>
 	<div class="w-full border-b border-cyan-500"></div>
-	<div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-black"></div>
+	<div class="absolute right-0 h-1 w-1/2 bg-gradient-to-r from-transparent to-zinc-950"></div>
 </div>
 <section class="py-28">
 	<div class="inner flex flex-col items-center gap-20">

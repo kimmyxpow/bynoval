@@ -7,10 +7,7 @@
   "scripts": {
     "dev": "concurrently --kill-others --kill-timeout 1000  -n SV,PB -c green,blue \"bun dev:fe\" \"bun dev:be\"",
     "dev:fe": "cd sv && bun dev",
-    "dev:be": "cd pb && modd",
-    "build": "concurrently --kill-others --kill-timeout 1000 -n SV,PB -c green,blue \"bun dev:fe\" \"bun dev:be\"",
-    "build:fe": "cd sv && bun build",
-    "build:be": "cd pb && go build",
+    "dev:be": "cd pb && ./pocketbase serve",
     "typegen": "pocketbase-typegen --db pb/pb_data/data.db --out sv/src/lib/pocketbase/generated-types.ts"
   },
   "workspaces": [

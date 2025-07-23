@@ -1,8 +1,5 @@
 import PocketBase from 'pocketbase';
 import type { TypedPocketBase } from './generated-types';
-import { browser } from '$app/environment';
-import { base } from '$app/paths';
+import { PB_URL } from '$env/static/private';
 
-export const client = new PocketBase(
-	browser ? window.location.origin + base : undefined
-) as TypedPocketBase;
+export const client = new PocketBase(PB_URL) as TypedPocketBase;

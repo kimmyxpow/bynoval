@@ -6,7 +6,8 @@ export const load: PageServerLoad = async ({ fetch }) => {
 		'https://api.github.com/repos/kimmyxpow/bynoval/commits?per_page=10',
 		{
 			headers: {
-				Authorization: `Bearer ${env.GITHUB_TOKEN}`
+				Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+				'User-Agent': 'kimmyxpow'
 			}
 		}
 	);

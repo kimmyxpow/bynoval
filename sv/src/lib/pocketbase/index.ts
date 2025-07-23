@@ -1,5 +1,5 @@
 import PocketBase from 'pocketbase';
 import type { TypedPocketBase } from './generated-types';
-import { env } from '$env/dynamic/private';
+import { PB_URL } from '$env/static/private';
 
-export const client = new PocketBase(env.PB_URL) as TypedPocketBase;
+export const client = new PocketBase(PB_URL) as TypedPocketBase;

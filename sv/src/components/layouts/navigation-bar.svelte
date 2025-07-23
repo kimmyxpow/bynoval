@@ -29,12 +29,12 @@
 	const personalLinks = [
 		{ href: '/about', img: 'about.webp', label: 'About' },
 		{ href: '/goals', img: 'goals.webp', label: 'Goals' },
-		{ href: '/interest', img: 'interest.webp', label: 'Interest' },
-		{ href: '/gallery', img: 'gallery.webp', label: 'Gallery' }
+		// { href: '/interest', img: 'interest.webp', label: 'Interest' },
+		// { href: '/gallery', img: 'gallery.webp', label: 'Gallery' }
 	];
 
 	const extraLinks = [
-		{ href: '/mentoring', icon: 'solar:call-chat-rounded-linear', label: 'Mentoring' },
+		// { href: '/mentoring', icon: 'solar:call-chat-rounded-linear', label: 'Mentoring' },
 		{ href: '/attribution', icon: 'solar:accessibility-linear', label: 'Attribution' },
 		{ href: '/community', icon: 'radix-icons:discord-logo', label: 'Community' }
 	];

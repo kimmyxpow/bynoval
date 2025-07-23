@@ -10,8 +10,8 @@ export const load: PageServerLoad = async ({ fetch }) => {
 			}
 		}
 	);
-	console.log(response);
-	const commits = await response.json();
+
+	const commits = response.ok ? await response.json() : [];
 
 	return {
 		commits

@@ -1,4 +1,4 @@
-<main class="pt-26">
+<main class="pt-32">
 	<div class="inner">
 		<div class="mx-auto max-w-2xl">
 			<div class="flex flex-col items-center justify-center gap-6 text-center">
@@ -20,7 +20,7 @@
 		<ul class="my-4">
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://svelte.dev?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -30,7 +30,7 @@
 			</li>
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://tailwindcss.com?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -40,7 +40,7 @@
 			</li>
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://bun.sh/"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -50,7 +50,7 @@
 			</li>
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://pocketbase.io?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -63,7 +63,7 @@
 		<ul class="my-4">
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://www.bits-ui.com?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -73,7 +73,7 @@
 			</li>
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://www.better-auth.com?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -83,7 +83,7 @@
 			</li>
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://runed.dev?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -93,7 +93,7 @@
 			</li>
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://iconify.design?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -106,7 +106,7 @@
 		<ul class="my-4">
 			<li class="flex gap-1 text-lg text-zinc-400">
 				<a
-					class="font-bold text-cyan-500 hover:underline"
+					class="text-cyan-500 hover:underline"
 					href="https://lordicon.com?ref=bynoval.com"
 					target="_blank"
 					rel="noopener noreferrer"

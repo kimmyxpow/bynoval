@@ -56,7 +56,7 @@
 	];
 </script>
 
-<main class="pt-26">
+<main class="pt-32">
 	<div class="inner">
 		<div class="mx-auto max-w-2xl">
 			<div class="flex flex-col items-center justify-center gap-6 text-center">
@@ -70,7 +70,7 @@
 		</div>
 	</div>
 </main>
-<section class="py-10">
+<section class="py-26">
 	<div class="inner">
 		<div class="mx-auto flex max-w-xl flex-col items-center gap-2">
 			<div class="flex w-full items-center justify-between">

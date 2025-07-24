@@ -16,8 +16,8 @@
 		<div class="mx-auto max-w-2xl">
 			<div class="flex flex-col items-center justify-center gap-6 text-center">
 				<span class="font-handwriting text-2xl text-zinc-400">Hello, you found me.</span>
-				<h1 class="text-7xl">
-					I'm <span class="text-cyan-500">Pow</span>. Welcome to my
+				<h1 class="text-7xl font-semibold">
+					I'm <span class="text-cyan-500">Noval</span>. Welcome to my
 					<span class="text-cyan-500">digital home</span>.
 				</h1>
 				<p class="text-xl">
@@ -68,7 +68,7 @@
 	<div class="inner flex flex-col items-center gap-12">
 		<div class="w-full">
 			<span class="font-handwriting text-xl text-zinc-400">Little Brain Dumps</span>
-			<h2 class="mb-4 text-4xl">Things I’ve Written Down</h2>
+			<h2 class="my-4 text-4xl">Things I’ve Written Down</h2>
 			<p class="max-w-2xl text-lg">
 				Some of them started as questions. Others, just needed to be said out loud. I write when I
 				can’t find the answer in silence — or when I want to remember how it felt to be here, in
@@ -222,7 +222,7 @@
 	<div class="inner flex flex-col items-center gap-12">
 		<div class="w-full">
 			<span class="font-handwriting text-xl text-zinc-400">Things I've Made (and Broke)</span>
-			<h2 class="mb-4 text-4xl">Projects I’ve Been Building</h2>
+			<h2 class="my-4 text-4xl">Projects I’ve Been Building</h2>
 			<p class="max-w-2xl text-lg">
 				This is where I get my hands dirty — building things, breaking stuff, learning as I go. Some
 				are experiments, some are finished, none are perfect.
@@ -402,7 +402,7 @@
 	<div class="inner flex flex-col items-center gap-20">
 		<div class="w-full">
 			<span class="font-handwriting text-xl text-zinc-400">Memory Hacks</span>
-			<h2 class="mb-4 text-4xl">Tiny Code Things</h2>
+			<h2 class="my-4 text-4xl">Tiny Code Things</h2>
 			<p class="max-w-2xl text-lg">
 				I forget stuff. These snippets are like sticky notes for my future self — little reminders
 				that saved me hours. You’re welcome to borrow them, or improve them (or laugh at them).

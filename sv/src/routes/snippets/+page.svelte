@@ -37,7 +37,7 @@
 	{@html githubDark}
 </svelte:head>
 
-<main class="pt-26">
+<main class="pt-32">
 	<div class="inner">
 		<div class="mx-auto max-w-2xl">
 			<div class="flex flex-col items-center justify-center gap-6 text-center">
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 </main>
-<section class="py-10">
+<section class="py-26">
 	<div class="inner">
 		<div class="flex-1 space-y-20">
 			<div class="flex items-end gap-2">

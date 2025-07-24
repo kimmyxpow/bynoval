@@ -7,7 +7,7 @@
 	let {}: Props = $props();
 </script>
 
-<main class="pt-26">
+<main class="pt-32 pb-26">
 	<div class="inner">
 		<div class="grid grid-cols-2 items-start gap-10">
 			<div class="flex flex-col gap-6">

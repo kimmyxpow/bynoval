@@ -5,7 +5,7 @@
 	let { data } = $props();
 </script>
 
-<main class="pt-26">
+<main class="pt-32">
 	<div class="inner">
 		<div class="mx-auto max-w-2xl">
 			<div class="flex flex-col items-center justify-center gap-6 text-center">
@@ -17,6 +17,7 @@
 		</div>
 	</div>
 </main>
+
 <section class="py-26">
 	<div class="inner">
 		<div class="grid grid-cols-2 gap-10">
@@ -54,7 +55,7 @@
 			<div class="grid grid-cols-2 gap-px bg-radial from-cyan-500 to-transparent to-90% p-px">
 				<div class="flex flex-col items-start bg-black px-8 py-8">
 					<img class="h-10" src="https://www.peepl.tech/images/logo-peepl.png" alt="Peepl Logo" />
-					<h3 class="mt-4 mb-2 text-xl font-bold">Full-Stack Developer</h3>
+					<h3 class="mt-4 mb-2 text-xl">Full-Stack Developer</h3>
 					<p class="text-zinc-400">
 						I design and build user-facing features, mostly focusing on clean UI and accessible
 						interactions. Still learning new things daily.
@@ -70,7 +71,7 @@
 						src="https://zicare.id/upload/website/logo_header.svg"
 						alt="Zi.Care Logo"
 					/>
-					<h3 class="mt-4 mb-2 text-xl font-bold">Full-Stack Developer</h3>
+					<h3 class="mt-4 mb-2 text-xl">Full-Stack Developer</h3>
 					<p class="text-zinc-400">
 						Designed and built internal systems for hospitals — from back-office tools to full info
 						systems — using PHP, Phalcon, SvelteKit, and PostgreSQL.
@@ -86,7 +87,7 @@
 						src="https://www.lskk.co.id/wp-content/uploads/2024/06/Artboard-5@300x-e1718107755849.png"
 						alt="Zi.Care Logo"
 					/>
-					<h3 class="mt-4 mb-2 text-xl font-bold">Full-Stack Developer Intern</h3>
+					<h3 class="mt-4 mb-2 text-xl">Full-Stack Developer Intern</h3>
 					<p class="text-zinc-400">
 						Built school-specific web apps — including RFID-based attendance, meeting management,
 						and a custom site — using Next.js, Tailwind, Express, and MongoDB. Also taught sessions
@@ -99,7 +100,7 @@
 				</div>
 				<div class="flex flex-col items-start bg-black px-8 py-8">
 					<img class="h-10" src="https://pow.kim/brand/bellshade.png" alt="Bellshade Logo" />
-					<h3 class="mt-4 mb-2 text-xl font-bold">Open-Source Maintainer</h3>
+					<h3 class="mt-4 mb-2 text-xl">Open-Source Maintainer</h3>
 					<p class="text-zinc-400">
 						Created learning materials and website templates for HTML & CSS. Built Bellshade CSS
 						framework with SCSS and helped review community submissions. Also contributed to the
@@ -112,7 +113,7 @@
 				</div>
 				<div class="flex flex-col items-start bg-black px-8 py-8">
 					<img class="h-10" src="https://pow.kim/brand/wpu.png" alt="WPU Logo" />
-					<h3 class="mt-4 mb-2 text-xl font-bold">Community Manager</h3>
+					<h3 class="mt-4 mb-2 text-xl">Community Manager</h3>
 					<p class="text-zinc-400">
 						Helped manage a 50K+ member dev community — answering programming questions, maintaining
 						a supportive vibe, and hosting occasional webinars to share what I know (and learn in

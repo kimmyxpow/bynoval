@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import Icon from '@iconify/svelte';
 	import { Popover } from 'bits-ui';
 
@@ -28,7 +29,7 @@
 
 	const personalLinks = [
 		{ href: '/about', img: 'about.webp', label: 'About' },
-		{ href: '/goals', img: 'goals.webp', label: 'Goals' },
+		{ href: '/goals', img: 'goals.webp', label: 'Goals' }
 		// { href: '/interest', img: 'interest.webp', label: 'Interest' },
 		// { href: '/gallery', img: 'gallery.webp', label: 'Gallery' }
 	];
@@ -38,6 +39,8 @@
 		{ href: '/attribution', icon: 'solar:accessibility-linear', label: 'Attribution' },
 		{ href: '/community', icon: 'radix-icons:discord-logo', label: 'Community' }
 	];
+
+	const currentPath = $derived(page.url.pathname);
 </script>
 
 <header
@@ -156,13 +159,18 @@
 				>
 					<div class="grid gap-2">
 						{#each extraLinks as link}
-							<a
-								href={link.href}
-								class="flex h-12 items-center gap-2 rounded-lg border border-zinc-700 px-3 font-medium text-zinc-400 transition-all select-none hover:bg-zinc-800 focus-visible:outline-none"
-							>
-								<Icon icon={link.icon} class="size-6" />
-								{link.label}
-							</a>
+							<Popover.Close>
+								{#snippet child({ props })}
+									<a
+										{...props}
+										href={link.href}
+										class="flex h-12 items-center gap-2 rounded-lg border border-zinc-700 px-3 font-medium text-zinc-400 transition-all select-none hover:bg-zinc-800 focus-visible:outline-none"
+									>
+										<Icon icon={link.icon} class="size-6" />
+										{link.label}
+									</a>
+								{/snippet}
+							</Popover.Close>
 						{/each}
 					</div>
 				</Popover.Content>
